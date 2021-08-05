@@ -1,0 +1,315 @@
+/*header*/
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(32, 28, 28);
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.header {
+    background: radial-gradient(#eae1eb, #b092b3)
+}
+
+.small-container {
+    max-width: 1100px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+nav a:hover {
+    border-bottom: 2px solid rgb(32, 28, 28);
+}
+
+.navbar a {
+    margin-right: 20px;
+}
+
+.navbar nav a {
+    margin-right: 0;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.account {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    margin-top: 5px;
+    display: block;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    display: block;
+    text-decoration: none;
+    color: rgb(32, 28, 28);
+    padding: 12px 16px;
+    margin-right: 0;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ddd;
+}
+
+.dropdown-menu p {
+    display: block;
+    text-decoration: none;
+    color: rgb(32, 28, 28);
+    padding: 12px 16px;
+    margin-right: 0;
+}
+
+
+/*footer*/
+
+.footer {
+    background: #000;
+    color: #8a8a8a;
+    font-size: 15px;
+    padding: 60px 0 20px;
+}
+
+
+/*product-page*/
+
+.product-details-page {
+    margin-top: 80px;
+}
+
+.col2 {
+    flex-basis: 40%;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.col2 img {
+    padding: 0;
+    max-width: 100%;
+}
+
+.product-details-page h4 {
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.product-details-page select {
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.product-details-page input {
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 2px solid red;
+}
+
+input:focus {
+    outline: none;
+}
+
+.small-img-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+p {
+    color: red;
+}
+
+h2 {
+    margin-top: 50px;
+}
+
+.col2 h3 {
+    color: rgb(50, 119, 176);
+}
+
+.btn {
+    display: inline-block;
+    background: rgb(76, 76, 171);
+    color: white;
+    padding: 8px 30px;
+    margin: 20px 0;
+    border-radius: 60px;
+    transition: background 0.5s;
+    border: 0px;
+}
+
+.btn:hover {
+    background: #64C9DF
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    padding: 5px;
+    color: white;
+    background: rgb(76, 76, 171);
+    font-weight: normal;
+    width: 20%;
+}
+
+td {
+    padding: 10px 5px;
+}
+
+.row-2 {
+    justify-content: space-between;
+    margin: 50px auto 50px;
+}
+
+button:focus {
+    outline: none;
+}
+
+.comment {
+    background: #f0f2f5;
+    border-radius: 20px;
+    border: 0px;
+}
+
+.comment h4 {
+    margin-left: 30px;
+}
+
+.comment p {
+    margin-left: 30px;
+    color: black;
+}
+
+.input-comment {
+    margin-top: 30px;
+}
+
+span {
+    border: 2px solid red;
+    margin-left: 10px;
+    width: 45px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+form {
+    position: relative;
+}
+
+form input {
+    border: none;
+    background: #fff;
+    padding: 7px;
+    outline: none;
+    border-radius: 12px;
+}
+
+form button {
+    padding: 5px;
+    border-radius: 12px;
+    position: absolute;
+    right: 0;
+    top: 2px;
+    border: none;
+    outline: none;
+    background: #fff;
+}
+
+.col-4 {
+    flex-basis: 20%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s
+}
+
+.col-4 img {
+    width: 100%;
+}
+
+.col-4 p {
+    font-size: 14px;
+    color: red;
+}
+
+.col-4:hover {
+    transform: translateY(-5px);
+}
+
+.you {
+    color: #ab7db0;
+}
+
+.comment p {
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+.seeMore {
+    border: 1px solid rgb(174, 0, 255);
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    color: rgb(174, 0, 255);
+    background: white;
+}

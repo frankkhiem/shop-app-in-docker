@@ -1,0 +1,281 @@
+/*header*/
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(32, 28, 28);
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.header {
+    background: radial-gradient(#eae1eb, #b092b3)
+}
+
+.small-container {
+    max-width: 1100px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+nav a:hover {
+    border-bottom: 2px solid rgb(32, 28, 28);
+}
+
+.navbar a {
+    margin-right: 20px;
+}
+
+.navbar nav a {
+    margin-right: 0;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.account {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    margin-top: 5px;
+    display: block;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    display: block;
+    text-decoration: none;
+    color: rgb(32, 28, 28);
+    padding: 12px 16px;
+    margin-right: 0;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ddd;
+}
+
+.dropdown-menu p {
+    display: block;
+    text-decoration: none;
+    color: rgb(32, 28, 28);
+    padding: 12px 16px;
+    margin-right: 0;
+}
+
+
+/*footer*/
+
+.footer {
+    background: #000;
+    color: #8a8a8a;
+    font-size: 15px;
+    padding: 60px 0 20px;
+}
+
+
+/*home*/
+
+p {
+    color: red;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: rgb(76, 76, 171);
+    color: white;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 60px;
+    transition: background 0.5s
+}
+
+.btn:hover {
+    background: #64C9DF;
+}
+
+.header .row {
+    margin-top: 70px;
+}
+
+.categories {
+    margin: 70px 0;
+}
+
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img {
+    width: 100%;
+}
+
+.col-4 {
+    flex-basis: 20%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s
+}
+
+.col-4 img {
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    margin: 0 auto 80ps;
+    position: relative;
+    line-height: 60px;
+    color: rgb(147, 35, 147);
+}
+
+h4 {
+    color: #555;
+    font-weight: normal;
+}
+
+.col-4 p {
+    font-size: 15px;
+}
+
+.col-4:hover {
+    transform: translateY(-5px);
+}
+
+
+/* PopUp Login */
+.modal-login .modal-mask {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: table;
+    transition: opacity .3s ease;
+}
+
+.modal-login .modal-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+.modal-login .modal-container {
+    width: 300px;
+    margin: 0px auto;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+    transition: all .3s ease;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.modal-login .modal-button-exit {
+    float: right;
+}
+
+.modal-login .modal-body {
+    margin: 20px 0;
+}
+
+.modal-login .login-error {
+    color: red;
+}
+
+/* style menu notification */
+.pointer {
+    cursor: pointer;
+  }
+  
+img.pointer {
+margin-right: 15px;
+}
+
+div.container_notification_menu {
+position: relative;
+}
+
+.notification_menu {
+position: absolute;
+top: 50px;
+left: -280px;
+}
+
+div.numbers_new_noti {
+background-color: red;
+color: white;
+display: inline-block;
+width: 18px;
+height: 18px;
+position: absolute;
+border-radius: 50%;
+left: -8px;
+top: -8px;
+text-align: center;
+font-weight: bold;
+font-size: 17px;
+}

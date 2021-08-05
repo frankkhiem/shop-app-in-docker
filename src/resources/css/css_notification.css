@@ -1,0 +1,40 @@
+/*reset CSS*/
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	outline: none;
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+/*style*/
+
+div.notification_menu {
+	display: block;
+	height: 350px;
+	width: 300px;
+	border: none;
+	border-radius: 5px;
+	background-color: #04df96f3;
+  overflow-y: auto;
+}
+
+div.notification_item {
+	margin: 20px 10px;
+	padding: 10px 10px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+div.watched {
+	background-color: rgb(255, 255, 255);
+}
+
+div.not_watched {
+	background-color: rgba(129, 126, 126, 0.89);
+	color: white;
+}
