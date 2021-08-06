@@ -207,7 +207,7 @@ class AdminProductController extends Controller
         $fileName = $request->file('file-import-products')->getClientOriginalName();
         $pathZipFile = $request->file('file-import-products')->storeAs('temp', $fileName);
 
-        JobsProductsImport::dispatch($pathZipFile);
+        JobsProductsImport::dispatch($pathZipFile)->delay(now()->addSeconds(15));
         
         return redirect()->back()->with('message', "Tệp dữ liệu đang được xử lý");
     }

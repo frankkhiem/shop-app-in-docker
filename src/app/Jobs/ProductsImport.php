@@ -20,8 +20,6 @@ use Exception;
 use stdClass;
 use Throwable;
 
-use function PHPSTORM_META\map;
-
 class ProductsImport implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
@@ -32,6 +30,7 @@ class ProductsImport implements ShouldQueue
      * @return void
      */
     public $tries = 1;
+    public $timeout = 300;
 
     protected $pathZipFile;
 
@@ -48,14 +47,14 @@ class ProductsImport implements ShouldQueue
      */
     public function handle()
     {
-        sleep(1);
+        // sleep(5);
         $zip = new ZipArchive();
-        if ( $zip->open( storage_path('app\\'.$this->pathZipFile) ) ) {
-            $zip->extractTo( storage_path('app\\temp\\'. File::name($this->pathZipFile)) );
+        if ( $zip->open( storage_path('app/'.$this->pathZipFile) ) ) {
+            $zip->extractTo( storage_path('app/temp/'. File::name($this->pathZipFile)) );
             $zip->close();
             
             // Đường dẫn tương đối tới thư mục giải nén
-            $pathDirExtract = 'temp\\'.File::name($this->pathZipFile);
+            $pathDirExtract = 'temp/'.File::name($this->pathZipFile);
         } else {
             echo('Extract fail!!!!!!');
         }

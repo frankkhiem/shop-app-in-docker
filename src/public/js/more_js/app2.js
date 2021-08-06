@@ -39037,7 +39037,10 @@ Echo["private"]('notifications_for_admin').listen('NewImportFileStatus', functio
     var listRowsProductFailed = 'None';
 
     if (totalRowsProductFailed > 0) {
-      listRowsProductFailed = data.description.productsImport.arrayRowsFail.map(function (item) {
+      rowsFailed = data.description.productsImport.arrayRowsFail.filter(function (item) {
+        return item[3];
+      });
+      listRowsProductFailed = rowsFailed.map(function (item) {
         return item[0];
       }).join(', ');
     }

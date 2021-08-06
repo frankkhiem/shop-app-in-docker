@@ -135,7 +135,7 @@ class AdminCategoryController extends Controller
             return redirect()->back()->with('error', "Tên file không hợp lệ: Yêu cầu 'categories_data' không phải '$fileNameWithoutExtension'");
         }
         $filePath = $request->file('file-import-categories')->storeAs('temp', $fileName);
-        JobsCategoriesImport::dispatch( $filePath );
+        JobsCategoriesImport::dispatch( $filePath )->delay(now()->addSeconds(15));
         
         return redirect()->back()->with('message', "Tệp dữ liệu đang được xử lý");
     }
