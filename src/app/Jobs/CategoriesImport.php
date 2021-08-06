@@ -41,7 +41,7 @@ class CategoriesImport implements ShouldQueue
      */
     public function handle()
     {
-        sleep(2);
+        // sleep(10);
         $import = new ImportCategories;
         Excel::import($import, $this->filePath);
 

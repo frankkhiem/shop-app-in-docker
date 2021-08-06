@@ -70,7 +70,7 @@ class ProductsImport implements ToCollection, WithHeadingRow
             $thumbnail = "";
 
             if ( $dirImagesProduct ) {
-                $images = File::files( storage_path('app\\'.$dirImagesProduct) );
+                $images = File::files( storage_path('app/'.$dirImagesProduct) );
 
                 if ( sizeof($images) > 0 ) {
                     foreach ( $images as  $image ) {

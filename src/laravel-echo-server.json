@@ -1,5 +1,5 @@
 {
-	"authHost": "http://localhost:8080",
+	"authHost": "http://nginx",
 	"authEndpoint": "/broadcasting/auth",
 	"clients": [
 		{

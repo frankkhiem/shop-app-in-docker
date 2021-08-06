@@ -68,7 +68,10 @@ Echo.private('notifications_for_admin')
     let totalRowsProductFailed = data.description.productsImport.arrayRowsFail.length;
     let listRowsProductFailed = 'None';
     if (totalRowsProductFailed > 0) {
-      listRowsProductFailed = data.description.productsImport.arrayRowsFail.map((item) => {
+      rowsFailed = data.description.productsImport.arrayRowsFail.filter((item) => {
+        return item[3];
+      });
+      listRowsProductFailed = rowsFailed.map((item) => {
         return item[0];
       }).join(', ');
     }
