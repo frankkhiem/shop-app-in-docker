@@ -25,7 +25,7 @@ With Docker and Docker Compose, you just need them.
 
 Clone project  
 ```bash
-git clone https://github.com/frankkhiem/quanlyduanHTTT.git
+git clone https://github.com/frankkhiem/thuc-tap-chuyen-nganh.git
 ```
 
 Switch branch from master to deploy-in-docker
@@ -60,7 +60,7 @@ Open browser with URL: http://localhost:8080
 For the project database, it can be installed in two ways:
 
 1. Use sample database  
-    - Copy files /sample_database/k2mn_shop.sql to mysql container to import create k3mn_shop database.
+    - Copy files /sample_database/k3mn_shop.sql to mysql container to import create k3mn_shop database.
 2. Create new database
     ```bash
     docker-compose exec php php artisan migrate
