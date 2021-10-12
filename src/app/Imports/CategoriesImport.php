@@ -43,11 +43,11 @@ class CategoriesImport implements ToModel, WithHeadingRow, WithBatchInserts, Wit
             return null;
         }
         
-        // return new Category([
-        //     'name' => $row['name'],
-        //     'short_desc' => $row['short_desc'],
-        //     'full_desc' => $row['full_desc']
-        // ]);
+        return new Category([
+            'name' => $row['name'],
+            'short_desc' => $row['short_desc'],
+            'full_desc' => $row['full_desc']
+        ]);
     }
 
     public function batchSize(): int

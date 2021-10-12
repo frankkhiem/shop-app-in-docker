@@ -82,22 +82,22 @@ class ProductsImport implements ToCollection, WithHeadingRow
                 }
             }
 
-            // Product::updateOrCreate(
-            //     [ 
-            //         'id' => $row['id'] 
-            //     ],
-            //     [
-            //         'category_id' => $row['category_id'],
-            //         'name' => $row['name'],
-            //         'thumbnail' => $thumbnail,
-            //         'image' => json_encode($imagesPath),
-            //         'short_desc' => $row['short_desc'],
-            //         'full_desc' => $row['full_desc'],
-            //         'price' => $row['price'],
-            //         'status_product_id' => $row['status_product_id'],
-            //         'star' => $row['star'],
-            //     ]
-            // );
+            Product::updateOrCreate(
+                [ 
+                    'id' => $row['id'] 
+                ],
+                [
+                    'category_id' => $row['category_id'],
+                    'name' => $row['name'],
+                    'thumbnail' => $thumbnail,
+                    'image' => json_encode($imagesPath),
+                    'short_desc' => $row['short_desc'],
+                    'full_desc' => $row['full_desc'],
+                    'price' => $row['price'],
+                    'status_product_id' => $row['status_product_id'],
+                    'star' => $row['star'],
+                ]
+            );
 
             $infoRowSuccess = [];
             array_push($infoRowSuccess, $this->currentRow + 1, $row['id'], 'Thành công');

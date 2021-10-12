@@ -46,11 +46,11 @@ class InfoProductsImport implements ToModel, WithHeadingRow, WithBatchInserts, W
             return null;
         }
 
-        // return new InfoProduct([
-        //     'product_id' => $row['product_id'],
-        //     'attribute' => $row['attribute'],
-        //     'information' => $row['information'],
-        // ]);
+        return new InfoProduct([
+            'product_id' => $row['product_id'],
+            'attribute' => $row['attribute'],
+            'information' => $row['information'],
+        ]);
     }
 
     public function batchSize(): int
