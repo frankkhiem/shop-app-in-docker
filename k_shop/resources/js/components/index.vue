@@ -60,7 +60,7 @@
                 </div>
                 <div class="col-3">
                     <router-link to="/products/search/laptop">
-                        <img src="https://image.flaticon.com/icons/png/512/59/59505.png"> 
+                        <img src="https://i.pinimg.com/originals/4d/41/4f/4d414ff3308eafb306ba5600a00b7d94.png"> 
                         <label><strong>Laptop</strong></label>
                     </router-link>
                 </div>

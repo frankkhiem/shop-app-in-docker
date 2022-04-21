@@ -39135,7 +39135,7 @@ window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_0__["default"]({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\KHyM\Documents\quanlyduanHTTT\k3mn_shop\resources\js\app2.js */"./resources/js/app2.js");
+module.exports = __webpack_require__(/*! C:\Users\KHyM\Documents\thuc-tap-chuyen-nganh\k_shop\resources\js\app2.js */"./resources/js/app2.js");
 
 
 /***/ })
